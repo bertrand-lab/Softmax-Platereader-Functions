@@ -51,7 +51,6 @@ plate_load <- function(sample_map, softmax_file){
 # prot_conc <- plate_load(sample_map = "bca-sample-map.csv", 
                         # softmax_file = "ER180502_BCA1.txt")
 
-
 # blank subtraction
 blank_subtraction <- function(tidy_prot_file){
   
@@ -90,8 +89,7 @@ detection_limit <- function(fitted_conc, dilution_factor){
     summarise(sample_mean = mean(predicted_prot, na.rm = ),
               sample_median = median(predicted_prot),
               sample_sd = sd(predicted_prot),
-              sample_sdmean = sample_sd/sample_mean,
-              abs_)
+              sample_sdmean = sample_sd/sample_mean)
   # warning column
   prot_conc2$warning <- ifelse(test = prot_conc2$sample_sdmean > 0.2, yes = 'warning', no = 'good-to-go')
   

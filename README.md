@@ -1,25 +1,25 @@
 # Softmax-Platereader-Functions
 Functions for reading in data from the SoftMax software for a 96 well plate.
 
-How to:
+### How to:
 
-1) Open R script and copy from `protein-bca-standcurve.R`:
+Open R script and copy from `protein-bca-standcurve.R`:
 
 `library(RCurl)`
 
-# Upload the latest version of softmax reader functions.
+Upload the latest version of softmax reader functions.
 `script <- getURL("https://raw.githubusercontent.com/bertrand-lab/Softmax-Platereader-Functions/master/Softmax%20Platereader%20Functions.R", ssl.verifypeer = FALSE)`
 
-# Run the lastest version
+Run the lastest version
 `eval(parse(text = script))`
 
-# open project in working directory (or set working directory)
+Open project in working directory (or set working directory)
 
-# edit out top and bottom lines from txt file
+Edit out top and bottom lines from txt file
 
-# create sample map
+Create sample map
 
-# Run
+Run
 
 `finale_wrapper(sample_map = "", `
                `softmax_file = "", `

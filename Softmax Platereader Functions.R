@@ -167,7 +167,7 @@ finale_wrapper <- function(sample_map, softmax_file, dilution_factor,
 
 
 
-finale_wrapper(sample_map = "bca-sample-map.csv", "ER180502_BCA1.txt", dilution_factor = 20)
+# finale_wrapper(sample_map = "bca-sample-map.csv", "ER180502_BCA1.txt", dilution_factor = 20)
 
 
 

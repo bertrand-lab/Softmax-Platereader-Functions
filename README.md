@@ -21,13 +21,14 @@ Run:
                `softmax_file = "", `
                `dilution_factor = 20)`
 
-To Do:
+### To Do:
 
 - Figure out how to *not* have to edit the top and bottom lines from softmax pro output.
 - Improve functions defensibility. 
 - Put fitted model into plot output.
+- Finish function descriptions docs below.
 
-Function Descriptions:
+### Function Descriptions:
 
 plate_input_96()
  - Reads in data from a .txt file exported from SoftMax
